@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, Input } from '@angular/core';
 import * as fabric from 'fabric';
 
 @Component({
@@ -10,6 +10,8 @@ import * as fabric from 'fabric';
 
 export class ZoneDessin implements AfterViewInit {
   leCanvas?: fabric.Canvas;
+  @Input('zHeight') zHeight: string = "700";
+  @Input('zWidth') zWidth: string = "700";
   //pour test
   private testPopulateCanvas(): void {
     const rect = new fabric.Rect({

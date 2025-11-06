@@ -8,4 +8,6 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('AngDrew');
+  confzHeight: string = "600";
+  confzWidth: string = "600";
 }
