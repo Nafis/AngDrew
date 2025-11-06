@@ -4,3 +4,12 @@ On peut prendre le template de library graphique directement en Angular Material
 on click droit et puis ctrl U pour voir la sources des codes: là on peut tout copy coller 
 observer aussi des components, tu va sur terminal
 ng add @angular/material
+
+canva une Api pour faire le dessin, une librarie qui est sympas c'est Fabricjs pour 2D et threejs pour 3D
+pour installer le fabricjs:
+npm install --save fabric
+npm install --save-dev @types/fabric
+
+==> dans @types in dist crée fabric
+
+dans le router app.html on garde que <router-outlet />
