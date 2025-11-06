@@ -1,4 +1,28 @@
-<app-zone-dessin [zWidth]="confzWidth" [zHeight]="confzHeight" ></app-zone-dessin>
+
+<!--
+<app-zone-dessin [zWidth]="confzWidth" [zHeight]="confzHeight"  (compteur)="doInterval($event)"></app-zone-dessin>
+-->
+
+<mat-grid-list cols="4" rowHeight="100px">
+  @for (tile of tiles; track tile; let idx = $index) {
+    <mat-grid-tile
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      @switch (idx) {
+        @case (0){ <app-top-bar></app-top-bar>}
+          
+        @case (1){ <app-list-draws></app-list-draws> }
+          
+        @case (2){<app-z-workspace></app-z-workspace>}
+        @default { {{tile.text}}}
+          
+      }
+    </mat-grid-tile>
+  }
+</mat-grid-list>
+
+
 
 <router-outlet />
 
