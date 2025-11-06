@@ -8,6 +8,11 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('AngDrew');
+  
   confzHeight: string = "600";
   confzWidth: string = "600";
+
+  doInterval(cpt: number): void {
+    console.log("App interval recu : " + cpt);
+  }
 }
