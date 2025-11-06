@@ -1,0 +1,6 @@
+generate this app by: 
+
+On peut prendre le template de library graphique directement en Angular Material , le site en prenant la source de codes 
+on click droit et puis ctrl U pour voir la sources des codes: là on peut tout copy coller 
+observer aussi des components, tu va sur terminal
+ng add @angular/material
