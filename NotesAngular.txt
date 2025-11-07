@@ -28,3 +28,12 @@ le directory model
 
 npm install --save uuid   ===> javascript 
 npm install --save-dev @types/uuid ===> typestricpt
+
+
+convention: si on ajout $ a la fin de nom de variable ca veud dire que c'est  une variable async
+
+
+for test unutaire il faut faire dabord
+npm run build
+et puis 
+npm run test

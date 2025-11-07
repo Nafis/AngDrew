@@ -1,1 +1,9 @@
-<p>list-draws works!</p>
+<ul>
+    @for(dessin of dataSource.getAllDessins(); track dessin.id) {
+        <li (click)="doClick(dessin.id!)">
+            <strong>Nom:</strong> {{dessin.name}} 
+        </li>
+    } @empty {
+        <p>Aucun dessin disponible.</p>
+    }
+</ul>
