@@ -21,3 +21,10 @@ créer le formulaire en html, pour ca il faut ajouter
 ReactiveFormsModule dans app-module.ts
 nous sommes dans un system MVC(Model Vu controleur  )
 <form [formGroup]="dessinInfoForm"> ==quand on met un com dans [] veut dire ce qui est en "" est forcement une variable ou une function
+
+une fois ajouter formulaire, de angular material on créé dans app 
+le directory model 
+
+
+npm install --save uuid   ===> javascript 
+npm install --save-dev @types/uuid ===> typestricpt
