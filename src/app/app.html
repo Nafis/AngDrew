@@ -14,7 +14,12 @@
           
         @case (1){ <app-list-draws></app-list-draws> }
           
-        @case (2){<app-z-workspace></app-z-workspace>}
+        @case (2){
+          <!-- Zone de dessin 
+          <app-z-workspace></app-z-workspace>
+          -->
+          <router-outlet />
+        }
         @default { {{tile.text}}}
           
       }
@@ -24,5 +29,5 @@
 
 
 
-<router-outlet />
+
 
