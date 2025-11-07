@@ -10,6 +10,8 @@ import { ZWorkspace } from './z-workspace/z-workspace';
 import { PageDessinInformation } from './page-dessin-information/page-dessin-information';
 import { PageDessin } from './page-dessin/page-dessin';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     MatGridListModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

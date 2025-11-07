@@ -1,6 +1,18 @@
 <form [formGroup]="dessinInfoForm" (ngSubmit)="onSubmit()">
-    <input formControlName="name"/>
-    <input formControlName="author"/>
-    <textarea formControlName="description"></textarea>
-    <button  type="submit" [disabled]="!dessinInfoForm.valid">send</button>
+    <mat-form-field>
+      <mat-label>Nom du dessin</mat-label>
+      <input matInput formControlName="name" placeholder="Entrez le nom du dessin"> 
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Auteur</mat-label>
+        <input matInput formControlName="author" placeholder="Entrez le nom de l'auteur">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!dessinInfoForm.valid">
+        Envoyer
+    </button>
+
 </form>

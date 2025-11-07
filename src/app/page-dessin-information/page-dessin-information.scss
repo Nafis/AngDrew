@@ -1,0 +1,8 @@
+:host {
+  display: flex;
+  flex-direction: column;  /* form va items ro vertical mikone */
+  align-items: flex-start; /* az chap mishe */
+  justify-content: flex-start; /* az bala mishe */
+  padding: 20px;            /* ye offset az bala va chap */
+  box-sizing: border-box;   /* padding ro jologeiri mikone */
+}
