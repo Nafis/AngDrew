@@ -1,0 +1,6 @@
+<form [formGroup]="dessinInfoForm" (ngSubmit)="onSubmit()">
+    <input formControlName="name"/>
+    <input formControlName="author"/>
+    <textarea formControlName="description"></textarea>
+    <button  type="submit" [disabled]="!dessinInfoForm.valid">send</button>
+</form>

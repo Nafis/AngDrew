@@ -7,6 +7,9 @@ import { ZoneDessin } from './zone-dessin/zone-dessin';
 import { TopBar } from './top-bar/top-bar';
 import { ListDraws } from './list-draws/list-draws';
 import { ZWorkspace } from './z-workspace/z-workspace';
+import { PageDessinInformation } from './page-dessin-information/page-dessin-information';
+import { PageDessin } from './page-dessin/page-dessin';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { ZWorkspace } from './z-workspace/z-workspace';
     ZoneDessin,
     TopBar,
     ListDraws,
-    ZWorkspace
+    ZWorkspace,
+    PageDessinInformation,
+    PageDessin
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatGridListModule
+    MatGridListModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

@@ -13,3 +13,11 @@ npm install --save-dev @types/fabric
 ==> dans @types in dist crée fabric
 
 dans le router app.html on garde que <router-outlet />
+
+--------------------------------
+
+créer l'appli dessin:(ce projet est en mode non standalone)
+créer le formulaire en html, pour ca il faut ajouter 
+ReactiveFormsModule dans app-module.ts
+nous sommes dans un system MVC(Model Vu controleur  )
+<form [formGroup]="dessinInfoForm"> ==quand on met un com dans [] veut dire ce qui est en "" est forcement une variable ou une function
